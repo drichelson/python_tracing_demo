@@ -8,8 +8,6 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.resourcedetector.gcp_resource_detector import GoogleCloudResourceDetector
 from opentelemetry.sdk.trace.export import ConsoleSpanExporter
 from opentelemetry.instrumentation.aiohttp_client import AioHttpClientInstrumentor
-from opentelemetry.instrumentation.requests import RequestsInstrumentor
-from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 
 async def main():
     # check if GCP_RESOURCE_DETECTOR is set to true
